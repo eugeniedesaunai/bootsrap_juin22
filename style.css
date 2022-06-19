@@ -1,0 +1,309 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+
+body {
+    width: 100vw;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Open+Sans:wght@300&family=Roboto:wght@100&display=swap');
+
+
+/* version 480x320 */
+
+
+/* structure */
+.flex_column{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex_between{
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex_column_around{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.flex_column_center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+
+.flex_wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/* image */
+
+.icone{
+    width: 15vw;
+}
+
+.photo{
+    width: 100%;
+}
+
+.background_ordinateur{
+    background-image: url(./images/header.jpg);
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* padding, margin */
+
+.padding_header{
+    padding: 5vw;
+    align-content: center;
+}
+
+.padding_section{
+    padding: 10vw;
+    padding-top: 25vw;
+    padding-bottom: 25vw;
+}
+
+.padding_top{
+    padding-top: 9vw;
+}
+
+.padding_bottom{
+    padding-bottom: 5vw;
+}
+
+.padding_left_right{
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.padding_article_top{
+    padding-top: 1.5vw;
+}
+
+.padding_icone{
+    padding-top: 6vw;
+    padding-bottom: 2vw;
+}
+
+.margin_bottom_null{
+    margin-bottom: 0;
+}
+
+/* color */
+
+.white_color{
+    color:  white;
+}
+
+.orange_color{
+    color: #f05f40;
+    border-color: #f05f40;
+}
+
+.background_orange{
+    background-color: #f05f40;
+}
+
+.background_black{
+    background-color: rgb(31, 30, 30);
+}
+
+
+/* texte */
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+.capitalize{
+    text-transform: capitalize;
+}
+
+.opacity{
+    opacity: 0.7;
+}
+
+.open_sans_size_titre{
+    font-family: 'Open-Sans', sans-serif;
+    font-size: 8vw;
+}
+
+.merriweather_size_texte{
+    font-size: 5.5vw;
+    font-family: 'Merriweather', serif;
+}
+
+.bold{
+    font-weight:900;
+}
+
+.light {
+    font-weight: lighter;
+}
+
+/* version 1024x768 */
+
+@media (min-width: 768px){
+
+    /* structure */
+
+    .block_all_height{
+        height: 100vh;
+    }
+
+    /* margin, padding */
+
+    .padding_section{
+        padding-top: 30vh;
+    }
+
+    .padding_section_small{
+        padding-left: 2.2vh;
+        padding-right: 2.2vh;
+        padding-top: 9vh;
+        padding-bottom: 9vh;
+    }
+    /* image */ 
+
+    .photo{
+        width: 50%;
+    }
+
+    .icone{
+        width: 10vw;
+    }
+
+
+    /* texte */
+
+    .open_sans_size_titre{
+        font-size: 2.2em;
+    }
+
+    .merriweather_size_texte{
+        font-size: 1.6em;
+    }
+
+    .big_titre{
+        font-size: 3.5em;
+    }
+
+    .small_texte{
+        font-size: 1.3em;
+    }
+}
+
+@media (min-width: 1024px){
+
+    /* structure */ 
+    .flex_grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(3,auto);
+    }
+
+    .flex_between_2{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /* image */
+
+    .background_ordinateur{
+        background-size: auto;
+    }
+
+    .picture_one{
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .picture_two{
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+
+    .picture_three{
+        grid-column: 3;
+        grid-row: 1;
+    }
+
+
+    .picture_four{
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .picture_five{
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .picture_six{
+        grid-column: 3;
+        grid-row: 2;
+    }
+
+    .photo{
+        width: 100%;
+    }
+
+    .icone{
+        width: 5vw;
+    }
+ 
+
+
+    /* margin, padding */
+
+    .padding_section_small{
+        padding-left: 19vw;
+        padding-right: 19vw;
+        padding-top: 13vh;
+        padding-bottom: 13vh;
+    }
+
+    .padding_article_top{
+        padding-top: 0;
+    }
+
+    .padding_small{
+        padding-left: 5vw;
+        padding-right: 5vw;
+        padding-top: 13vh;
+        padding-bottom: 13vh;
+    }
+
+    /* texte */
+
+    .open_sans_size_titre{
+        font-size: 1.9em;
+    }
+
+    .merriweather_size_texte{
+        font-size: 1.4em;
+    }
+
+    .big_titre{
+        font-size: 3.5em;
+    }
+
+    .small_texte{
+        font-size: 1.2em;
+    }
+    
+}
