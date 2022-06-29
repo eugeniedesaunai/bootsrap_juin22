@@ -10,6 +10,17 @@ body {
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Roboto:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Open+Sans:wght@300&family=Roboto:wght@100&display=swap');
 
+
+@keyframes bounce {
+    70% { transform:translateY(0%); }
+    80% { transform:translateY(-15%); }
+    90% { transform:translateY(0%); }
+    95% { transform:translateY(-7%); }
+    97% { transform:translateY(0%); }
+    99% { transform:translateY(-3%); }
+    100% { transform:translateY(0); }
+}
+
 /* version 480x320 */
 /* structure */
 
@@ -143,6 +154,10 @@ body {
     font-weight: lighter;
 }
 
+.bounce {
+    animation: bounce 2s ease ;
+  }
+
 /* version 1024x768 */
 
 @media (min-width: 768px){
@@ -215,6 +230,12 @@ body {
         grid-column: 1;
         grid-row: 1;
     }
+
+    .picture_one:hover{
+        width: 50vw;
+        position: absolute;
+    }
+
 
     .picture_two{
         grid-column: 2;
